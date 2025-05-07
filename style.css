@@ -1,0 +1,525 @@
+
+
+.bg-nav {
+  background-color: transparent !important ;
+  position: fixed !important;
+  width: 100%;
+  z-index: 10;
+  transition: all 1s;
+}
+.bg-nav-scroll {
+  background-color: white !important ;
+}
+
+.icon-color,
+.btn-color {
+  color: white !important;
+}
+.icon-color-scroll {
+  color: black !important;
+}
+.icon-nav {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 596;
+  font-style: normal;
+  color: white;
+}
+.nav-content {
+  margin: auto;
+  gap: 1.875rem;
+  align-items: center;
+}
+.nav-item {
+  position: relative;
+  color: white;
+}
+.nav-item a {
+  color: white !important;
+}
+.nav-item-scroll a {
+  color: rgb(0, 0, 0) !important;
+}
+.nav-item > a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.nav-item:hover > a::after {
+  width: 100%;
+}
+.show {
+  background-color: white !important;
+}
+.show ul li a {
+  color: black !important;
+}
+
+/*sec1*/
+.Home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.671)), url(img/bg.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Home h2 {
+  font-size: 3.125em;
+  font-weight: 800;
+}
+.Home span {
+  padding: 0.2em 0;
+  color: #afafaf;
+  font-weight: 100;
+  font-size: 2.625rem;
+}
+.text-animation::after {
+  content: " ";
+  color: white;
+  animation: text-move 6s infinite;
+}
+.social-icon a {
+  text-decoration: none;
+}
+.social-icon i {
+  font-size: 1.25rem;
+  padding: 10px 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #00000062;
+  border-radius: 100%;
+  align-self: center;
+}
+
+/*about*/
+.about {
+  padding: 6.25rem 0 4.375rem 0;
+}
+.about-img {
+  width: 80%;
+}
+picture {
+  position: relative;
+}
+.about-img picture::after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: -30px;
+  bottom: -30px;
+  background-image: url(img/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+.hide {
+  display: none;
+}
+.about-img img {
+  width: 31.25rem;
+}
+.about-text {
+  padding: 0 3.125rem;
+}
+.about-text h3 {
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.about .skills {
+  margin-top: 30px;
+}
+
+.about .skills .item {
+  margin-bottom: 30px;
+}
+.about .skills h6 {
+  font-size: 13px;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.about .skills .skills-progress {
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #f7f7f7;
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+  position: relative;
+}
+.about .skills .skills-progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 10%;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.about .skills .skills-progress span:after {
+  content: attr(data-value);
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  font-size: 11px;
+  color: #fff;
+}
+.btn1:hover {
+  background-color: white;
+  color: #000000;
+}
+.btn2:hover {
+  background-color: rgb(29, 29, 29);
+  color: #ffffff;
+}
+/*services*/
+.services {
+  padding: 100px 0;
+  background-color: #e0dfdf;
+}
+.services .container h3 {
+  font-weight: 900;
+  font-size: 40px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 3.125rem;
+}
+.services .container h3::after {
+  content: ".";
+}
+.my-contain {
+  gap: 10px;
+}
+.my-card {
+  padding: 50px 30px;
+  text-align: center;
+  position: relative;
+}
+
+.my-icon {
+  font-size: 30px;
+  height: 70px;
+  width: 70px;
+  background-color: #afafaf60;
+  border-radius: 100px;
+  position: relative;
+  transition: all 0.6s;
+}
+.my-icon::before {
+  content: "";
+  position: absolute;
+  bottom: 40%;
+  left: 15px;
+}
+.my-card:hover .my-icon {
+  background-color: #000000;
+  color: white;
+}
+.mytext-card {
+  font-size: 0.8125rem;
+}
+/*\Portfolio*/
+
+.Portfolio {
+  padding: 100px 0;
+}
+a {
+  cursor: pointer;
+  color: black;
+}
+.active::after {
+  content: "";
+  width: 100% !important;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.Portfolio .container h3 {
+  font-weight: 900;
+  font-size: 40px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 3.125rem;
+}
+.Portfolio .container h3::after {
+  content: ".";
+}
+
+.myoverlay {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: rgba(255, 255, 255, 0.63);
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 2;
+}
+
+.Portfolio .my-card:hover .myoverlay {
+  opacity: 1;
+}
+
+/*Testimonials*/
+.Testimonials {
+  padding: 100px 0 0 0;
+  background-color: #e0dfdf;
+}
+.Testimonials .container h3 {
+  font-weight: 900;
+  font-size: 40px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 3.125rem;
+}
+.Testimonials .container h3::after {
+  content: ".";
+}
+.active::after {
+    width: 0 !important;
+}
+.my-slider{
+  height: 15.5rem !important;
+}
+.my-slider .active img{
+  width: 6.25rem !important;
+  border-radius: 100px;
+}
+.my-text h5 , .my-text p{
+  color: #000000;
+}
+
+/*number*/
+.numbers .icon {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.numbers h3 {
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+.numbers p {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+/*our-team*/
+
+.our-team {
+  padding: 100px 0 0 0;
+  background-color: #e0dfdf;
+}
+.our-team  h3 {
+  font-weight: 900;
+  font-size: 40px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 3.125rem;
+}
+.our-team h3::after {
+  content: ".";
+}
+.mytext-card p{
+padding: 0;
+margin: 0;
+}
+.our-team .mycard .myoverlay i{
+  font-size: 45px;
+}
+.our-team .mycard:hover .myoverlay {
+  opacity: 1;
+}
+/*Contact-us*/
+.Contact-us {
+  padding: 100px 0 0 0;
+}
+.Contact-us  h3 {
+  font-weight: 900;
+  font-size: 40px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 3.125rem;
+}
+.Contact-us h3::after {
+  content: ".";
+}
+.Contact-us .icon{
+      background-color: rgb(240, 240, 240);
+    display: inline-block;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: relative;
+    transition: 0.6s;
+}
+.Contact-us .icon i{
+  position: absolute;
+  top:22%;
+  left: 22%;
+}
+.Contact-us .myhover:hover .icon {
+background-color: rgb(0, 0, 0);
+color: white;
+}
+.mybtn:hover{
+background-color: white;
+color: black;
+}
+/*footer*/
+footer {
+  background: #1c1c1c;
+  padding: 30px;
+}
+footer p {
+  font-size: 13px;
+  word-spacing: 2px;
+  color: rgb(194, 194, 194);
+}
+
+
+
+
+@media (max-width: 1000px) {
+  .about-img {
+    flex-wrap: wrap;
+    width: 70%;
+  }
+  .about-img img {
+    width: 100%;
+  }
+  .my-slider{
+  height: 20.625rem !important;
+}
+}
+@keyframes text-move {
+  2.5% {
+    content: " D|";
+  }
+  5% {
+    content: " De|";
+  }
+  7.5% {
+    content: " Dev|";
+  }
+  10% {
+    content: " Deve|";
+  }
+  12.5% {
+    content: " Devel|";
+  }
+  12.5% {
+    content: " Devel|";
+  }
+  15% {
+    content: " Develo|";
+  }
+  17.5% {
+    content: " Develop|";
+  }
+  20% {
+    content: " Develope|";
+  }
+  22.5% {
+    content: " Developer|";
+  }
+  25% {
+    content: " Develope|";
+  }
+  27.5% {
+    content: " Develop|";
+  }
+  30% {
+    content: " Develo|";
+  }
+  32.5% {
+    content: " Devel|";
+  }
+  35% {
+    content: " Deve|";
+  }
+  37.5% {
+    content: " Dev|";
+  }
+  40% {
+    content: " De|";
+  }
+  42.5% {
+    content: " Des|";
+  }
+  45% {
+    content: " Desi|";
+  }
+  47.5% {
+    content: " Desig|";
+  }
+  50% {
+    content: " Design|";
+  }
+  52.5% {
+    content: " Designe|";
+  }
+  55% {
+    content: " Designer|";
+  }
+  57.5% {
+    content: " Designe|";
+  }
+  60% {
+    content: " Design|";
+  }
+  62.5% {
+    content: " Desig|";
+  }
+  65% {
+    content: " Desi|";
+  }
+  67.5% {
+    content: " Des|";
+  }
+  70% {
+    content: " De|";
+  }
+  72.5% {
+    content: " D|";
+  }
+  75% {
+    content: " M|";
+  }
+  77.5% {
+    content: " Mo|";
+  }
+  80% {
+    content: " Mom|";
+  }
+  82.5% {
+    content: " Mome|";
+  }
+  85% {
+    content: " Momen|";
+  }
+  87.5% {
+    content: " Mome|";
+  }
+  90% {
+    content: " Mom|";
+  }
+  92.5% {
+    content: " Mo|";
+  }
+  95.5% {
+    content: " M|";
+  }
+}
